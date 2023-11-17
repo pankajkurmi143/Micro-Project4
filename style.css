@@ -1,0 +1,57 @@
+body{
+    background-color: #3B4664;
+}
+.name{
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 400px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    ;
+}
+.cal_box{
+    background-color: #00000040;
+    margin-left: 400px;
+    width: 350px;
+    height: 70px;
+    border-radius: 8px;
+    border: 2px;
+    padding: 5px;
+}
+.grid_container{
+    background-color: #00000040;
+    margin-left: 400px;
+    margin-top: 10px;
+    width: 350px;
+    height: 320px;
+    border-radius: 8px;
+    border: 2px;
+    padding: 5px;
+}
+button{
+    background-color: white;
+    width: 60px;
+    height: 40px;
+    border: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+#del_b{
+    background-color: #647299;
+    color: white
+    ;
+}
+#reset_b{
+    background-color: #647299;
+    color: white;
+    width: 150px;
+    ;
+}
+#result{
+    background-color: #D13F30;
+    color: white;
+    width: 140px;
+    ;
+}

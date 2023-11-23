@@ -5,34 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="test.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <p class="name">calc</p>
     <div>
-        <input type="text" name="" class="cal_box">
+        <input type="text" name="" class="cal_box" id="display" disabled>
     </div>
     <div class="grid_container">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button id="del_b">DEL</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
-        <button>.</button>
-        <button>0</button>
-        <button>/</button>
-        <button>*</button>
-        <button id="reset_b">RESET</button>
-        <button id="result">=</button>
-
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button id="del_b" onclick="deleteLast()">DEL</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button id="reset_b" onclick="resetDisplay()">RESET</button>
+        <button id="result" onclick="calculateResult()">=</button>
     </div>
-    
 </body>
 </html>
